@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="1_Home.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">LungCancer</a>
+            <div class="nav-links">
+                <a style="color: #007bff;" href="1_Home.html">Home</a>
+                <a href="7_About.html">About</a>
+                <a href="8_Contact.html">Contact</a>
+                <a href="4_Preview.html">Preview</a>
+                <a href="5_Performance_Analysis.html">Performance Analysis</a>
+                <a href="6_Chart.html">Chart</a>
+                <div class="auth-buttons">
+                    <a href="2_Login.html" id="R1" class="btn btn-login">Login</a>
+                    <a href="3_Register.html" id="R2" class="btn btn-register">Register</a>
+                </div>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="welcome-section">
+        <h1 style="font-weight: normal;" class="welcome-text">Prediction Of LungCancer </h1>
+        <i id="p1" >Using Convolutional Nural Network</i>
+        <a href="2_Login.html" class="get-started-btn">Get Started</a>
+    </section>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

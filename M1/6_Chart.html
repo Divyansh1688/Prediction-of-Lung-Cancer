@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1_Home.css">
+    <style>
+        html, body {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            overflow-y: auto;
+        }
+        html::-webkit-scrollbar, body::-webkit-scrollbar {
+            display: none;
+            width: 0 !important;
+            height: 0 !important;
+        }
+        html::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
+            display: none;
+        }
+        html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+            display: none;
+        }
+        .d1{
+            margin-top: 100px;
+            text-align: center;
+            width: 100%;
+            height: 200px;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .d1 h1 {
+            position: relative;
+            letter-spacing: 5px;
+            top: 31%;
+            color: white;
+            font-size: 50px;
+        }
+
+        .d2 {
+            position: relative;
+            top: -40 px;
+            margin: 50px auto;
+            max-width: 800px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .upload-container {
+            border: none;
+            padding: 40px;
+            border-radius: 10px;
+            background-color: #383b3f;
+            transition: all 0.3s ease;
+        }
+
+        .upload-container:hover {
+            border-color: #007bff;
+            background-color: #414547;
+        }
+
+        .upload-container input[type="file"] {
+            display: none;
+        }
+
+        .upload-label {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .upload-label:hover {
+            background-color: #0056b3;
+        }
+
+        .preview-image {
+            max-width: 100%;
+            max-height: 400px;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .para h2 {
+            color: #ffa500;
+            font-size: 40px;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">LungCancer</a>
+            <div class="nav-links">
+                <a href="1_Home.html">Home</a>
+                <a href="7_About.html">About</a>
+                <a href="8_Contact.html">Contact</a>
+                <a href="4_Preview.html">Preview</a>
+                <a href="5_Performance_Analysis.html">Performance Analysis</a>
+                <a style="color: #007bff;" href="6_Chart.html">Chart</a>
+                
+                <div class="auth-buttons">
+                    <a href="2_Login.html" id="R1" class="btn btn-login">Login</a>
+                    <a href="3_Register.html" id="R2" class="btn btn-register">Register</a>
+                </div>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="d1">
+        <h1>Chart</h1>
+    </div>
+    <div class="d2">
+        <div class="upload-container">
+           <div class="para">
+              <h2>Model Loss</h2>
+              <div class="c1">
+                <canvas id="myChart">CHART 1 WILL BE HERE</canvas>
+              </div>
+           </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="upload-container">
+            <div class="para">
+                <h2>Model Accuracy</h2>
+                <div class="c2">
+                    <canvas id="myChart2">CHART 2 WILL BE HERE</canvas>
+                </div>
+            </div>
+    </div>
+   
+</body>
+</html>
